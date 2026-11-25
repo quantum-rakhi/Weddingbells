@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#21060c">
-<meta name="description" content="A royal Bengali wedding invitation for Ananya Sarkar and Koustabh Sahoo, 9 March 2027, Kolkata.">
-<meta property="og:title" content="Ananya & Koustabh — Shubho Bibaho"><meta property="og:description" content="A celebration of love in Kolkata · 09 March 2027">
+<meta name="description" content="রাজকীয় বাঙালি বিবাহের আমন্ত্রণ for Ananya Sarkar and Koustabh Sahoo, 9 March 2027, Kolkata.">
+<meta property="og:title" content="Ananya & Koustabh — শুভ বিবাহ"><meta property="og:description" content="অনন্যা ও কৌস্তভের শুভ বিবাহ · ৯ মার্চ ২০২৭">
 <title>Ananya & Koustabh | A Royal Bengali Wedding</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -108,37 +108,92 @@ radial-gradient(ellipse at 50% 45%,#f1d18c20,transparent 55%)}
 .open-btn{border:1px solid #f0d99e;background:linear-gradient(135deg,#f5e2b1,#c1954f 60%,#9b6c31);color:#3e0a16;padding:15px 29px;letter-spacing:.15em;text-transform:uppercase;font-size:10px;font-weight:700;box-shadow:0 9px 26px #12020877;cursor:pointer;margin-top:12px}
 .hint{font-size:9px;letter-spacing:.15em;color:#e2c98e;margin-top:10px;text-transform:uppercase}
 @media(max-width:620px){.stage{padding:50px 10px 36px}.card-stage{height:555px}.card-object{width:min(86vw,360px);height:500px}.inner-content{inset:23px 20px}.motif{height:82px}.inner-title{font-size:25px}.inner-names{font-size:29px}.inner-copy,.inner-venue{font-size:10px}.cover-inner{inset:25px 20px}.cover-flower{height:140px}.cover-bengali{font-size:24px}.cover-names{font-size:28px}.intro{font-size:18px}}
-.cover-elephants{width:100%;height:76px;margin:-2px 0 0}.cover-elephants svg{width:100%;height:100%;filter:drop-shadow(0 1px 1px #160309)}.card-cover{background-image:radial-gradient(circle at 8% 12%,#d9b56e22 0 2px,transparent 3px),radial-gradient(circle at 92% 12%,#d9b56e22 0 2px,transparent 3px),radial-gradient(circle at 8% 88%,#d9b56e22 0 2px,transparent 3px),radial-gradient(circle at 92% 88%,#d9b56e22 0 2px,transparent 3px),radial-gradient(ellipse at 50% 40%,#812538,#4a0b18 70%,#310711)}@media(max-width:620px){.cover-elephants{height:58px}}</style></head>
+.cover-elephants{width:100%;height:76px;margin:-2px 0 0}.cover-elephants svg{width:100%;height:100%;filter:drop-shadow(0 1px 1px #160309)}.card-cover{background-image:radial-gradient(circle at 8% 12%,#d9b56e22 0 2px,transparent 3px),radial-gradient(circle at 92% 12%,#d9b56e22 0 2px,transparent 3px),radial-gradient(circle at 8% 88%,#d9b56e22 0 2px,transparent 3px),radial-gradient(circle at 92% 88%,#d9b56e22 0 2px,transparent 3px),radial-gradient(ellipse at 50% 40%,#812538,#4a0b18 70%,#310711)}@media(max-width:620px){.cover-elephants{height:58px}}
+/* Bengali-first animated royal invitation */
+:root{--wine:#4a0816;--gold:#d8b66f;--goldlight:#f4dfaa;--paper:#f7edda;--ink:#411a20}
+body{font-family:"Noto Serif Bengali",serif}
+.stage{background:radial-gradient(ellipse at 50% 42%,#843047 0,#4b1020 48%,#16040a 100%)}
+.stage:after{animation:frameGlow 5s ease-in-out infinite alternate}
+@keyframes frameGlow{from{opacity:.35;box-shadow:0 0 0 #d9b56e00}to{opacity:1;box-shadow:inset 0 0 34px #d9b56e18}}
+.scene{animation:sceneRise 1.25s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sceneRise{from{opacity:0;transform:translateY(34px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.card-object{animation:cardFloat 5s ease-in-out infinite;transform-origin:50% 65%}
+@keyframes cardFloat{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -9px;rotate:.35deg}}
+.card-cover{background-image:radial-gradient(circle at 8% 12%,#d9b56e28 0 2px,transparent 3px),radial-gradient(circle at 92% 12%,#d9b56e28 0 2px,transparent 3px),radial-gradient(ellipse at 50% 40%,#812538,#4a0b18 70%,#310711);box-shadow:inset 0 0 0 7px #d9b56e22,inset 0 0 0 10px #d9b56e88,inset 0 0 35px #17030999,0 15px 25px #16020855}
+.card-cover:before{border:1px solid #f1d99c;box-shadow:inset 0 0 12px #e7c77a22}
+.cover-bengali{font-size:clamp(22px,5vw,29px);line-height:1.65;text-shadow:0 1px 0 #6b421e,0 0 12px #f5d99b55}
+.cover-footer,.inner-copy,.inner-venue,.inner-title,.bengali,.bn-heading,.bn{font-family:"Noto Serif Bengali",serif}
+.inner-content{inset:28px 25px}
+.inner-copy{font-size:clamp(11px,2vw,14px);line-height:1.9}
+.inner-title{font-size:clamp(25px,4vw,32px)}
+.cover-hinge{box-shadow:8px 0 18px #1b050b55}
+.scene.opened .cover-hinge,.card-open .cover-hinge{transform:rotateY(-158deg)}
+.scene.opened .card-object{transform:translateY(-5px) rotateY(-3deg)}
+.scene.opened .card-cover{filter:brightness(.88)}
+.open-btn{font-family:"Noto Serif Bengali",serif;letter-spacing:.04em;font-size:13px;padding:14px 28px}
+.hint{font-family:"Noto Serif Bengali",serif;letter-spacing:.04em;font-size:11px}
+.ambient:before,.ambient:after{content:"✿";position:absolute;color:#e6c27b66;font-size:24px;animation:petalDrift 12s linear infinite}
+.ambient:before{left:9%;top:20%}.ambient:after{right:10%;top:62%;animation-delay:-6s;font-size:18px}
+@keyframes petalDrift{0%{transform:translate3d(0,20px,0) rotate(0);opacity:0}20%{opacity:.75}80%{opacity:.65}100%{transform:translate3d(50px,-110px,0) rotate(250deg);opacity:0}}
+.content{background:linear-gradient(180deg,#f8efdf,#f2e4ca);font-family:"Noto Serif Bengali",serif}
+.content .section{animation:sectionIn .8s ease both}
+@keyframes sectionIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.content h2,.event h3,.info-card h3,.person strong{font-family:"Noto Serif Bengali",serif}
+.content h2{font-size:clamp(30px,5vw,48px)}
+.copy{font-family:"Noto Serif Bengali",serif;font-size:14px;line-height:2.1}
+.eyebrow{font-family:"Noto Serif Bengali",serif;letter-spacing:.08em;font-size:12px}
+.person span{font-family:"Noto Serif Bengali",serif}
+.event p,.event .bn{font-family:"Noto Serif Bengali",serif;font-size:12px;line-height:1.9}
+.event h3{font-size:20px}
+.info-card{background:linear-gradient(145deg,#4c0d1b,#26050d);box-shadow:0 22px 48px #3b101d33,inset 0 0 0 1px #e4c47b}
+.info-card h3{font-size:27px}
+.info-card p{font-family:"Noto Serif Bengali",serif;line-height:2}
+.action{font-family:"Noto Serif Bengali",serif}
+.footer{font-family:"Noto Serif Bengali",serif}
+@media(max-width:620px){.card-object{animation:none}.inner-content{inset:22px 18px}.inner-copy{font-size:10px}.cover-bengali{line-height:1.55}.copy{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style></head>
 <body>
-<header class="stage"><div class="ambient"></div><div class="topline">A royal invitation · রাজকীয় নিমন্ত্রণ</div>
-<div class="scene" id="scene"><div class="crest">॥ श्री गणेशाय नमः ॥</div><div class="overline">A Bengali celebration of love · বাঙালির শুভ বিবাহ</div>
+<header class="stage"><div class="ambient"></div><div class="topline">শুভ বিবাহ · সাদর আমন্ত্রণ</div>
+<div class="scene" id="scene"><div class="crest">॥ श्री गणेशाय नमः ॥</div><div class="overline">ভালোবাসা, ঐতিহ্য ও দুই পরিবারের মিলন</div>
 <div class="card-stage"><div class="card-object">
 <div class="card-inside"><div class="inner-content">
 <div class="motif"><svg viewBox="0 0 340 110"><g fill="none" stroke="#a77d43" stroke-width="1.7"><path d="M170 100C130 72 130 35 170 8C210 35 210 72 170 100ZM170 91C145 69 149 43 170 24C191 43 195 69 170 91ZM130 95C90 90 75 62 89 34C117 39 135 60 130 95ZM210 95C250 90 265 62 251 34C223 39 205 60 210 95ZM105 88C70 100 42 85 36 58C65 47 91 58 105 88ZM235 88C270 100 298 85 304 58C275 47 249 58 235 88Z"/></g><g fill="#a77d43"><circle cx="170" cy="12" r="3"/><circle cx="89" cy="34" r="3"/><circle cx="251" cy="34" r="3"/></g></svg></div>
-<div class="inner-title">শুভ বিবাহ</div><div class="inner-copy">With the blessings of our families<br>পরিবারের আশীর্বাদে</div>
-<div class="inner-names">Ananya Sarkar<br><span style="color:#a77d43">&</span><br>Koustabh Sahoo</div>
-<div class="inner-copy">cordially invite you to celebrate<br>their wedding festivities</div><div class="inner-date">09 · MARCH · 2027</div><div class="inner-venue">Kolkata, West Bengal<br>কলকাতা, পশ্চিমবঙ্গ</div>
+<div class="inner-title">শুভ বিবাহ</div><div class="inner-copy">আমাদের দুই পরিবারের আশীর্বাদে<br>আপনাদের সাদর আমন্ত্রণ</div>
+<div class="inner-names">অনন্যা সরকার<br><span style="color:#a77d43">&</span><br>কৌস্তভ সাহু</div>
+<div class="inner-copy">শুভ বিবাহ ও আনন্দ-উৎসবে<br>আপনাদের আন্তরিক আমন্ত্রণ</div><div class="inner-date">৯ · মার্চ · ২০২৭</div><div class="inner-venue">কলকাতা, পশ্চিমবঙ্গ<br>ভারত</div>
 </div></div>
 <div class="cover-hinge"><div class="card-cover"><div class="cover-inner">
-<div class="cover-kicker">A royal Bengali wedding invitation</div><div class="cover-crest">শুভ বিবাহ</div>
+<div class="cover-kicker">এক রাজকীয় বাঙালি বিবাহের নিমন্ত্রণ</div><div class="cover-crest">শুভ বিবাহ</div>
 <div class="cover-flower"><svg viewBox="0 0 340 180"><g fill="none" stroke="#d9b56e" stroke-width="2"><path d="M170 150C110 120 115 60 170 18C225 60 230 120 170 150ZM170 140C135 110 142 75 170 45C198 75 205 110 170 140ZM120 145C70 147 42 115 55 72C97 79 119 104 120 145ZM220 145C270 147 298 115 285 72C243 79 221 104 220 145ZM95 151C53 166 19 145 20 110C58 96 86 117 95 151ZM245 151C287 166 321 145 320 110C282 96 254 117 245 151Z"/></g><g fill="#d9b56e"><circle cx="170" cy="17" r="4"/><circle cx="55" cy="72" r="3"/><circle cx="285" cy="72" r="3"/></g></svg></div>
-<div class="cover-bengali">অনন্যা সরকার<br><span style="font-size:20px">&</span><br>কৌস্তভ সাহু</div><div class="cover-names">Ananya <i>&</i> Koustabh</div>
+<div class="cover-bengali">অনন্যা সরকার<br><span style="font-size:20px">&</span><br>কৌস্তভ সাহু</div><div class="cover-names">অনন্যা <i>&</i> কৌস্তভ</div>
 <div class="cover-elephants"><svg viewBox="0 0 340 88" aria-hidden="true"><g fill="none" stroke="#e2c47c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 <g transform="translate(8 2)"><path d="M15 53 Q17 26 47 22 Q72 18 88 35 L102 42 Q111 52 101 62 L91 61 L88 82 L78 82 L76 60 L43 60 L39 82 L29 82 L28 58 Q18 59 15 53Z"/><path d="M44 25 Q24 5 19 32 Q20 47 39 50"/><path d="M89 38 Q104 31 104 48 Q103 58 91 57"/><path d="M101 47 Q116 56 105 68 Q98 73 96 64"/><circle cx="76" cy="37" r="2" fill="#e2c47c"/><path d="M35 23 L45 11 L55 24 L67 12 L78 25 M33 48 Q55 57 83 47 M49 30 L51 44 L65 44 L67 30Z"/></g>
 <g transform="translate(332 2) scale(-1 1)"><path d="M15 53 Q17 26 47 22 Q72 18 88 35 L102 42 Q111 52 101 62 L91 61 L88 82 L78 82 L76 60 L43 60 L39 82 L29 82 L28 58 Q18 59 15 53Z"/><path d="M44 25 Q24 5 19 32 Q20 47 39 50"/><path d="M89 38 Q104 31 104 48 Q103 58 91 57"/><path d="M101 47 Q116 56 105 68 Q98 73 96 64"/><circle cx="76" cy="37" r="2" fill="#e2c47c"/><path d="M35 23 L45 11 L55 24 L67 12 L78 25 M33 48 Q55 57 83 47 M49 30 L51 44 L65 44 L67 30Z"/></g>
 <path d="M126 72 Q170 54 214 72 M143 60 L153 49 L163 60 L170 45 L177 60 L187 49 L197 60" /></g><g fill="#e2c47c"><circle cx="170" cy="43" r="3"/><circle cx="126" cy="72" r="2"/><circle cx="214" cy="72" r="2"/></g></svg></div>
-<div class="cover-date">09 · 03 · 2027</div><div class="cover-footer">কলকাতা · KOLKATA</div>
+<div class="cover-date">০৯ · ০৩ · ২০২৭</div><div class="cover-footer">কলকাতা · পশ্চিমবঙ্গ</div>
 </div></div></div></div></div>
-<p class="intro">Two hearts. Two families. One beautiful beginning.<br><span class="bengali">দুটি হৃদয়, দুটি পরিবার, এক নতুন পথচলা।</span></p>
-<button class="open-btn" id="openBtn">Open the invitation ✦</button><div class="hint" id="hint">Turn the cover to discover the invitation</div></div></header>
+<p class="intro">দুটি হৃদয়, দুটি পরিবার, এক নতুন পথচলা।<br><span class="bengali">ভালোবাসা ও আশীর্বাদে শুরু হোক নতুন জীবনের পথ।</span></p>
+<button class="open-btn" id="openBtn">আমন্ত্রণপত্র খুলুন ✦</button><div class="hint" id="hint">সিলমোহর খুলে আমন্ত্রণপত্রটি দেখুন</div></div></header>
 <main class="content">
-<section class="section"><div class="eyebrow">With the blessings of our families</div><h2>Shubho Bibaho</h2><div class="bn-heading bengali">শুভ বিবাহ</div><p class="copy">With immense joy and the blessings of our loved ones, we invite you to join us as we begin our forever. Your presence will make our celebration complete.</p><p class="copy bengali">পরিবারের আশীর্বাদ ও আপনাদের ভালোবাসাকে সঙ্গে নিয়ে আমাদের নতুন জীবনের শুভ সূচনায় আপনাদের সাদর আমন্ত্রণ। আপনাদের উপস্থিতি আমাদের আনন্দকে পূর্ণতা দেবে।</p>
-<div class="couple"><div class="person"><strong>Ananya Sarkar</strong><span>THE BRIDE · কনে</span></div><div class="heart">♥</div><div class="person"><strong>Koustabh Sahoo</strong><span>THE GROOM · বর</span></div></div></section>
-<section class="section"><div class="eyebrow">The wedding celebrations</div><h2>Three moments, one forever</h2><p class="copy bengali">আনন্দ, আচার আর ভালোবাসায় ভরে উঠুক প্রতিটি মুহূর্ত।</p>
-<div class="event-grid"><article class="event"><div class="symbol">✿</div><h3>Gaye Holud</h3><p>A golden afternoon of turmeric, laughter and sunshine.</p><div class="bn">গায়ে হলুদ</div></article><article class="event"><div class="symbol">❋</div><h3>The Wedding</h3><p>Sacred vows, blessings and the beginning of forever.</p><div class="bn">শুভ বিবাহ</div></article><article class="event"><div class="symbol">✧</div><h3>Reception</h3><p>An evening of joy, family and togetherness.</p><div class="bn">বৌভাত / সংবর্ধনা</div></article></div><p class="copy" style="font-size:11px">Event timings and individual venues will be shared by the families.</p></section>
-<section class="section"><div class="eyebrow">We can't wait to celebrate with you</div><h2>Meet us in Kolkata</h2><div class="info-card"><h3>Save the Date</h3><p>Tuesday · 9 March 2027<br><span class="bengali">মঙ্গলবার · ৯ মার্চ ২০২৭</span></p><p>✦ Kolkata, West Bengal, India ✦</p><div class="actions"><a class="action" href="https://www.google.com/maps/search/?api=1&query=Kolkata%2C%20West%20Bengal" target="_blank" rel="noopener">Explore Kolkata map ↗</a><button class="action" id="calendarBtn">Add to calendar</button></div></div><p class="copy">Your love, blessings and good wishes are the greatest gifts we could ask for.</p></section>
-</main><footer class="footer"><strong>Ananya & Koustabh</strong><p class="bengali">একসাথে পথচলার শুরু</p><p>THE BEGINNING OF FOREVER · 09.03.2027 · KOLKATA</p></footer>
+<section class="section"><div class="eyebrow">পরিবারের আশীর্বাদে</div><h2>Shubho Bibaho</h2><div class="bn-heading bengali">শুভ বিবাহ</div><p class="copy">পরম আনন্দ ও প্রিয়জনদের আশীর্বাদকে সঙ্গী করে আমাদের জীবনের এক নতুন অধ্যায়ের শুভ সূচনায় আপনাদের সপরিবারে সাদর আমন্ত্রণ জানাই। আপনাদের উপস্থিতি ও আশীর্বাদ আমাদের আনন্দকে পূর্ণতা দেবে।</p><p class="copy bengali">পরিবারের আশীর্বাদ ও আপনাদের ভালোবাসাকে সঙ্গে নিয়ে আমাদের নতুন জীবনের শুভ সূচনায় আপনাদের সাদর আমন্ত্রণ। আপনাদের উপস্থিতি আমাদের আনন্দকে পূর্ণতা দেবে।</p>
+<div class="couple"><div class="person"><strong>Ananya Sarkar</strong><span>কনে</span></div><div class="heart">♥</div><div class="person"><strong>Koustabh Sahoo</strong><span>বর</span></div></div></section>
+<section class="section"><div class="eyebrow">বিবাহের আনন্দ-অনুষ্ঠান</div><h2>তিনটি আয়োজন, এক চিরন্তন বন্ধন</h2><p class="copy bengali">হলুদের রং, শঙ্খধ্বনি ও আশীর্বাদে রাঙিয়ে উঠুক আমাদের বিশেষ দিনগুলি।</p>
+<div class="event-grid"><article class="event"><div class="symbol">✿</div><h3>গায়ে হলুদ</h3><p>হলুদের রঙে, হাসি-আনন্দে ও আপনজনের ভালোবাসায় রঙিন এক আয়োজন।</p><div class="bn">গায়ে হলুদ</div></article><article class="event"><div class="symbol">❋</div><h3>শুভ বিবাহ</h3><p>শুভদৃষ্টি, মালাবদল ও পবিত্র সাতপাকে বাঁধা পড়বে দুটি জীবন।</p><div class="bn">শুভ বিবাহ</div></article><article class="event"><div class="symbol">✧</div><h3>বৌভাত ও সংবর্ধনা</h3><p>আত্মীয়-স্বজন ও বন্ধুদের সঙ্গে আনন্দ ভাগ করে নেওয়ার এক সন্ধ্যা।</p><div class="bn">বৌভাত / সংবর্ধনা</div></article></div><p class="copy" style="font-size:11px">অনুষ্ঠানের সময় ও নির্দিষ্ট স্থান পরে জানিয়ে দেওয়া হবে।</p></section>
+<section class="section"><div class="eyebrow">আপনাদের সঙ্গে আনন্দ ভাগ করে নিতে অধীর অপেক্ষায়</div><h2>দেখা হবে কলকাতায়</h2><div class="info-card"><h3>তারিখটি মনে রাখুন</h3><p>মঙ্গলবার · ৯ মার্চ ২০২৭<br><span class="bengali">৯ই মার্চ, ২০২৭</span></p><p>✦ কলকাতা, পশ্চিমবঙ্গ, ভারত ✦</p><div class="actions"><a class="action" href="https://www.google.com/maps/search/?api=1&query=Kolkata%2C%20West%20Bengal" target="_blank" rel="noopener">কলকাতার মানচিত্র দেখুন ↗</a><button class="action" id="calendarBtn">ক্যালেন্ডারে যোগ করুন</button></div></div><p class="copy">আপনাদের ভালোবাসা, আশীর্বাদ ও শুভকামনাই আমাদের কাছে অমূল্য উপহার।</p></section>
+</main><footer class="footer"><strong>Ananya & Koustabh</strong><p class="bengali">একসাথে পথচলার শুরু</p><p>চিরসুন্দর এক পথচলার শুরু · ০৯.০৩.২০২৭ · কলকাতা</p></footer>
 <script>
-const scene=document.getElementById('scene'),openBtn=document.getElementById('openBtn');openBtn.addEventListener('click',()=>{scene.classList.add('opened');document.getElementById('hint').textContent='Your invitation is revealed · আমন্ত্রণ রইল';openBtn.textContent='Invitation unsealed ♥';});
-document.getElementById('calendarBtn').addEventListener('click',()=>{const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Ananya and Koustabh//Wedding//EN','BEGIN:VEVENT','UID:ananya-koustabh-20270309@invitation','DTSTART;VALUE=DATE:20270309','DTEND;VALUE=DATE:20270310','SUMMARY:Wedding of Ananya Sarkar and Koustabh Sahoo','LOCATION:Kolkata, West Bengal, India','DESCRIPTION:Join us to celebrate Ananya and Koustabh.','END:VEVENT','END:VCALENDAR'].join('\r\n');const u=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));const a=document.createElement('a');a.href=u;a.download='Ananya-Koustabh-Wedding.ics';a.click();URL.revokeObjectURL(u);});
+const scene=document.getElementById('scene'),openBtn=document.getElementById('openBtn');
+openBtn.addEventListener('click',()=>{
+  scene.classList.add('opened');
+  document.getElementById('hint').textContent='আপনাদের জন্য রইল আন্তরিক আমন্ত্রণ';
+  openBtn.textContent='আমন্ত্রণ উন্মোচিত ♥';
+  openBtn.setAttribute('aria-expanded','true');
+});
+document.getElementById('calendarBtn').addEventListener('click',()=>{
+ const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Ananya and Koustabh//Wedding//BN','BEGIN:VEVENT','UID:ananya-koustabh-20270309@invitation','DTSTART;VALUE=DATE:20270309','DTEND;VALUE=DATE:20270310','SUMMARY:অনন্যা সরকার ও কৌস্তভ সাহুর শুভ বিবাহ','LOCATION:কলকাতা, পশ্চিমবঙ্গ, ভারত','DESCRIPTION:অনন্যা ও কৌস্তভের শুভ বিবাহে আপনাদের আমন্ত্রণ।','END:VEVENT','END:VCALENDAR'].join('\\r\\n');
+ const u=URL.createObjectURL(new Blob([ics],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download='Ananya-Koustabh-Bibaho.ics';a.click();URL.revokeObjectURL(u);
+});
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.content .section').forEach(section=>observer.observe(section));
 </script></body></html>
