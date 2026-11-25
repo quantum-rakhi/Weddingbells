@@ -82,17 +82,50 @@ radial-gradient(ellipse at 50% 45%,#f1d18c20,transparent 55%)}
 .crest{font-size:25px}.overline{font-size:8px;letter-spacing:.2em}
 .intro{font-size:19px}
 }
+/* Royal Bengali heirloom card */
+.stage{min-height:100svh;padding:55px 16px;background:radial-gradient(ellipse at 50% 45%,#783044,#390b17 65%,#170309);overflow:hidden}
+.stage:before{inset:11px;border:1px solid #d9b56e;box-shadow:inset 0 0 0 6px #d9b56e22}.stage:after{inset:19px;border:1px solid #d9b56e55}
+.ambient{opacity:.7;background:radial-gradient(ellipse at 12% 20%,#d8a24a55,transparent 22%),radial-gradient(ellipse at 88% 24%,#d8a24a44,transparent 22%),radial-gradient(ellipse at 20% 85%,#d8a24a44,transparent 25%),radial-gradient(ellipse at 80% 80%,#d8a24a33,transparent 22%)}
+.scene{width:min(100%,1000px)}.crest{font-size:29px;color:#f0d99c}.overline{font-size:9px;letter-spacing:.3em;color:#e8ce94}
+.card-stage{height:680px;display:grid;place-items:center;perspective:1800px;position:relative;margin:0 auto}
+.card-stage:before{content:"";position:absolute;bottom:20px;width:min(88%,600px);height:70px;border-radius:50%;background:#080106bb;filter:blur(28px)}
+.card-object{position:relative;width:min(82vw,430px);height:590px;transform-style:preserve-3d;filter:drop-shadow(0 28px 30px #090106bb)}
+.card-inside,.card-cover{position:absolute;inset:0;overflow:hidden}
+.card-inside{background:linear-gradient(135deg,#fff8e9,#eee0c3 52%,#e5d0a9);color:#4a1821;box-shadow:inset 0 0 0 1px #fff9e8}
+.card-inside:before{content:"";position:absolute;inset:12px;border:1px solid #b78b49}.card-inside:after{content:"";position:absolute;inset:18px;border:1px solid #b78b4955}
+.inner-content{position:absolute;inset:28px 25px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;z-index:1}
+.motif{width:100%;height:110px}.motif svg{width:100%;height:100%}
+.inner-title{font:700 29px "Noto Serif Bengali";color:#875c2d}.inner-names{font:600 34px/1 "Cormorant Garamond";color:#68162b;margin:8px 0}.inner-copy{font:12px/1.7 "Noto Serif Bengali";color:#77533b}.inner-date{font:600 15px "Cormorant Garamond";letter-spacing:.12em;color:#875c2d}.inner-venue{font:11px/1.7 "Noto Serif Bengali";color:#77533b}
+.cover-hinge{position:absolute;inset:0;transform-origin:left center;transform-style:preserve-3d;transition:transform 1.65s cubic-bezier(.2,.72,.18,1);z-index:4}
+.card-cover{backface-visibility:hidden;background:radial-gradient(ellipse at 50% 40%,#812538,#4a0b18 70%,#310711);border:2px solid #c9a15b;box-shadow:inset 0 0 0 7px #d9b56e22,inset 0 0 0 10px #d9b56e88,inset 0 0 35px #17030999;color:#e9cf91}
+.card-cover:before{content:"";position:absolute;inset:17px;border:1px solid #e5c77d}.card-cover:after{content:"";position:absolute;inset:24px;border:1px solid #e5c77d66}
+.cover-inner{position:absolute;inset:32px 28px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;z-index:1}
+.cover-kicker{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:#f0dca9}.cover-crest{font:27px "Noto Serif Bengali";color:#f0d99c}
+.cover-flower{width:100%;height:175px}.cover-flower svg{width:100%;height:100%}
+.cover-bengali{font:700 29px "Noto Serif Bengali";color:#f3d99c}.cover-names{font:600 32px "Cormorant Garamond";color:#f9e8bd}.cover-date{font-size:11px;letter-spacing:.23em;color:#e4c27b}.cover-footer{font:11px "Noto Serif Bengali";color:#e9cf91}
+.card-open .cover-hinge{transform:rotateY(-158deg)}.card-open .card-object{transform:translateY(-4px) rotateY(-3deg)}
+.intro{font:italic 22px/1.45 "Cormorant Garamond";color:#f5e6c9;margin:0}
+.open-btn{border:1px solid #f0d99e;background:linear-gradient(135deg,#f5e2b1,#c1954f 60%,#9b6c31);color:#3e0a16;padding:15px 29px;letter-spacing:.15em;text-transform:uppercase;font-size:10px;font-weight:700;box-shadow:0 9px 26px #12020877;cursor:pointer;margin-top:12px}
+.hint{font-size:9px;letter-spacing:.15em;color:#e2c98e;margin-top:10px;text-transform:uppercase}
+@media(max-width:620px){.stage{padding:50px 10px 36px}.card-stage{height:555px}.card-object{width:min(86vw,360px);height:500px}.inner-content{inset:23px 20px}.motif{height:82px}.inner-title{font-size:25px}.inner-names{font-size:29px}.inner-copy,.inner-venue{font-size:10px}.cover-inner{inset:25px 20px}.cover-flower{height:140px}.cover-bengali{font-size:24px}.cover-names{font-size:28px}.intro{font-size:18px}}
 </style></head>
 <body>
 <header class="stage"><div class="ambient"></div><div class="topline">A royal invitation · রাজকীয় নিমন্ত্রণ</div>
-<div class="scene" id="scene"><div class="crest">॥ श्री गणेशाय नमः ॥</div><div class="overline">Together with our families, we invite you</div>
-<div class="envelope-wrap"><div class="envelope-shadow"></div>
-<div class="letter"><div class="letter-inner"><div class="mini">শুভ বিবাহ · SHUBHO BIBAHO</div><div class="orn">❧</div><div class="names">Ananya <i>&</i><br>Koustabh</div><div class="date">09 · MARCH · 2027</div><div class="orn">✧</div><div class="mini">KOLKATA · WEST BENGAL</div></div></div>
-<div class="envelope"><div class="env-back"></div><div class="env-pocket"></div><div class="env-left"></div><div class="env-right"></div><div class="env-bottom"></div><div class="env-flap"></div><div class="seal">শ্রী</div></div>
-</div>
+<div class="scene" id="scene"><div class="crest">॥ श्री गणेशाय नमः ॥</div><div class="overline">A Bengali celebration of love · বাঙালির শুভ বিবাহ</div>
+<div class="card-stage"><div class="card-object">
+<div class="card-inside"><div class="inner-content">
+<div class="motif"><svg viewBox="0 0 340 110"><g fill="none" stroke="#a77d43" stroke-width="1.7"><path d="M170 100C130 72 130 35 170 8C210 35 210 72 170 100ZM170 91C145 69 149 43 170 24C191 43 195 69 170 91ZM130 95C90 90 75 62 89 34C117 39 135 60 130 95ZM210 95C250 90 265 62 251 34C223 39 205 60 210 95ZM105 88C70 100 42 85 36 58C65 47 91 58 105 88ZM235 88C270 100 298 85 304 58C275 47 249 58 235 88Z"/></g><g fill="#a77d43"><circle cx="170" cy="12" r="3"/><circle cx="89" cy="34" r="3"/><circle cx="251" cy="34" r="3"/></g></svg></div>
+<div class="inner-title">শুভ বিবাহ</div><div class="inner-copy">With the blessings of our families<br>পরিবারের আশীর্বাদে</div>
+<div class="inner-names">Ananya Sarkar<br><span style="color:#a77d43">&</span><br>Koustabh Sahoo</div>
+<div class="inner-copy">cordially invite you to celebrate<br>their wedding festivities</div><div class="inner-date">09 · MARCH · 2027</div><div class="inner-venue">Kolkata, West Bengal<br>কলকাতা, পশ্চিমবঙ্গ</div>
+</div></div>
+<div class="cover-hinge"><div class="card-cover"><div class="cover-inner">
+<div class="cover-kicker">A royal Bengali wedding invitation</div><div class="cover-crest">শুভ বিবাহ</div>
+<div class="cover-flower"><svg viewBox="0 0 340 180"><g fill="none" stroke="#d9b56e" stroke-width="2"><path d="M170 150C110 120 115 60 170 18C225 60 230 120 170 150ZM170 140C135 110 142 75 170 45C198 75 205 110 170 140ZM120 145C70 147 42 115 55 72C97 79 119 104 120 145ZM220 145C270 147 298 115 285 72C243 79 221 104 220 145ZM95 151C53 166 19 145 20 110C58 96 86 117 95 151ZM245 151C287 166 321 145 320 110C282 96 254 117 245 151Z"/></g><g fill="#d9b56e"><circle cx="170" cy="17" r="4"/><circle cx="55" cy="72" r="3"/><circle cx="285" cy="72" r="3"/></g></svg></div>
+<div class="cover-bengali">অনন্যা সরকার<br><span style="font-size:20px">&</span><br>কৌস্তভ সাহু</div><div class="cover-names">Ananya <i>&</i> Koustabh</div><div class="cover-date">09 · 03 · 2027</div><div class="cover-footer">কলকাতা · KOLKATA</div>
+</div></div></div></div></div>
 <p class="intro">Two hearts. Two families. One beautiful beginning.<br><span class="bengali">দুটি হৃদয়, দুটি পরিবার, এক নতুন পথচলা।</span></p>
-<button class="open-btn" id="openBtn">Break the seal · Open invitation ✦</button><div class="hint" id="hint">Break the wax seal to reveal your invitation</div>
-</div></header>
+<button class="open-btn" id="openBtn">Open the invitation ✦</button><div class="hint" id="hint">Turn the cover to discover the invitation</div></div>>
 <main class="content">
 <section class="section"><div class="eyebrow">With the blessings of our families</div><h2>Shubho Bibaho</h2><div class="bn-heading bengali">শুভ বিবাহ</div><p class="copy">With immense joy and the blessings of our loved ones, we invite you to join us as we begin our forever. Your presence will make our celebration complete.</p><p class="copy bengali">পরিবারের আশীর্বাদ ও আপনাদের ভালোবাসাকে সঙ্গে নিয়ে আমাদের নতুন জীবনের শুভ সূচনায় আপনাদের সাদর আমন্ত্রণ। আপনাদের উপস্থিতি আমাদের আনন্দকে পূর্ণতা দেবে।</p>
 <div class="couple"><div class="person"><strong>Ananya Sarkar</strong><span>THE BRIDE · কনে</span></div><div class="heart">♥</div><div class="person"><strong>Koustabh Sahoo</strong><span>THE GROOM · বর</span></div></div></section>
