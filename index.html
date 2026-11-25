@@ -40,6 +40,48 @@
 .footer{text-align:center;background:#21050c;padding:45px 20px;color:#ddc79a}.footer strong{font:38px "Cormorant Garamond",serif;color:#e4c47e}.footer p{font-size:9px;letter-spacing:.22em}
 @media(max-width:620px){.topline{top:28px;font-size:8px}.envelope-wrap{height:365px}.envelope{height:210px;width:98%}.letter{width:82%;height:265px;bottom:55px;padding:24px 15px}.scene.opened .letter{transform:translateY(-112px) scale(1)}.seal{width:62px;height:62px}.event-grid{grid-template-columns:1fr}.couple{gap:8px}.person{padding:18px 4px}.content{padding:58px 17px}.intro{font-size:20px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Premium hero composition override */
+.stage{min-height:100svh;padding:58px 20px 54px;background:
+radial-gradient(ellipse at 50% 48%,#9a3b50 0,#68172d 34%,#3a0917 72%,#170309 100%),
+linear-gradient(135deg,#26050d,#6c1228)}
+.stage:before{inset:12px;border:1px solid #e2c47c;box-shadow:inset 0 0 0 5px #3b081544,inset 0 0 0 6px #d8b66f44}
+.stage:after{inset:20px;border:1px solid #e7c77b55}
+.ambient{opacity:.9;background:
+radial-gradient(circle at 12% 18%,#f8dda966 0 1px,transparent 2px),
+radial-gradient(circle at 88% 23%,#f8dda966 0 1px,transparent 2px),
+radial-gradient(circle at 17% 78%,#f8dda944 0 1px,transparent 2px),
+radial-gradient(circle at 83% 82%,#f8dda944 0 1px,transparent 2px),
+radial-gradient(ellipse at 50% 45%,#f1d18c20,transparent 55%)}
+.scene{width:min(100%,1040px);transform:none}
+.crest{font-size:32px;margin-bottom:14px}
+.overline{font-size:11px;letter-spacing:.34em}
+.envelope-wrap{height:520px;max-width:900px;margin:10px auto 0;perspective:2200px}
+.envelope{width:min(88vw,760px);height:360px;bottom:20px;filter:drop-shadow(0 35px 35px #080106bb)}
+.env-back{border-width:2px;box-shadow:inset 0 0 0 7px #d9b66b18,inset 0 0 35px #20040b99}
+.env-back:after{inset:15px;border:1px solid #e8ca8a99}
+.env-pocket{background:linear-gradient(145deg,#a13c54 0%,#7c1b35 48%,#4a0b1e 100%)}
+.env-left,.env-right{filter:brightness(1.08)}
+.env-bottom{background:linear-gradient(180deg,#a1344e,#72142d 62%,#450a1c)}
+.env-flap{background:linear-gradient(165deg,#c15b70 0%,#94243f 42%,#5c0d25 100%);filter:drop-shadow(0 14px 12px #16020899)}
+.seal{width:94px;height:94px;font-size:31px;box-shadow:0 12px 22px #160208bb,inset 0 0 0 4px #a67434,inset 0 0 0 7px #e4c47b}
+.letter{width:min(68%,510px);height:370px;bottom:38px;padding:42px 32px 30px;transform:translateY(270px) scale(.94);box-shadow:0 30px 65px #100208aa,inset 0 0 0 1px #fff9d8}
+.letter .names{font-size:clamp(38px,5vw,58px);margin:22px 0 14px}
+.letter .mini{font-size:12px}.letter .date{font-size:13px}
+.scene.opened .letter{transform:translateY(-190px) scale(1)}
+.open-btn{font-size:11px;padding:17px 34px;margin-top:16px}
+.hint{font-size:10px}
+.intro{font-size:clamp(23px,3vw,30px);margin-top:24px}
+@media(max-width:620px){
+.stage{padding:62px 14px 42px}
+.envelope-wrap{height:390px}
+.envelope{width:94vw;height:220px;bottom:20px}
+.letter{width:82%;height:270px;bottom:28px;padding:26px 16px;transform:translateY(215px) scale(.92)}
+.scene.opened .letter{transform:translateY(-112px) scale(1)}
+.seal{width:66px;height:66px;font-size:24px}
+.crest{font-size:25px}.overline{font-size:8px;letter-spacing:.2em}
+.intro{font-size:19px}
+}
 </style></head>
 <body>
 <header class="stage"><div class="ambient"></div><div class="topline">A royal invitation · রাজকীয় নিমন্ত্রণ</div>
